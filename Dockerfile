@@ -1,17 +1,11 @@
-#
-# Ubuntu Desktop (LXDE) Dockerfile
-#
-# https://github.com/dockerfile/ubuntu-desktop
-#
+#inspired from  https://github.com/dockerfile/ubuntu-desktop, but this actually works
 
 # Pull base image.
 FROM ubuntu
 
-# Install LXDE and VNC server.
-RUN \
-  apt-get update && \
-  DEBIAN_FRONTEND=noninteractive apt-get install -y lxde-core lxterminal tightvncserver && \
-  rm -rf /var/lib/apt/lists/*
+RUN apt-get update
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y xubuntu-desktop tightvncserver
+RUN rm -rf /var/lib/apt/lists/*
 
 # Define working directory.
 WORKDIR /data
