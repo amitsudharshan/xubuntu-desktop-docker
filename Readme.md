@@ -1,4 +1,4 @@
-This Dockerfile will build a full xfce ubuntu desktop. It will expose vnc running on 5900 that you can connect to localhost:5900 and use. 
+This Dockerfile will build a full xfce ubuntu desktop. It will expose vnc running on 5901 that you can connect to localhost:5901 and use. 
 It's a very convenient thing to have.
 
 To use:
